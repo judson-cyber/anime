@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: black;
+    color: white;
+    padding: 25px;
+}
+
+li,ul,h1{
+    display: inline;
+}
+
+ul{
+    margin-left: 80%;
+}
+
+li{
+    color: gray;
+}
+
+li:hover{
+    color: white;
+    cursor: pointer;;
+}
+
+input{
+    padding: 15px;
+    width: 60%;
+}
+
+.search{
+    padding: 25px;
+    text-align: center;
+
+}
+
+.image {
+    margin: 100px 0 0 200px;
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image img {
+    width: 10%;
+    height: 200%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+
+.image img:hover {
+    width: 60%;
+    height: 200%;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 25px;
+    margin-top: 20px;
+}
