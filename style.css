@@ -1,68 +1,93 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-nav{
+
+/* Full Page */
+html,
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+nav {
     background-color: black;
     color: white;
     padding: 25px;
 }
 
-li,ul,h1{
+h1,
+ul,
+li {
     display: inline;
 }
 
-ul{
-    margin-left: 80%;
+ul {
+    float: right;
 }
 
-li{
+li {
+    list-style: none;
+    margin-left: 20px;
     color: gray;
+    cursor: pointer;
 }
 
-li:hover{
+li:hover {
     color: white;
-    cursor: pointer;;
 }
 
-input{
-    padding: 15px;
-    width: 60%;
-}
-
-.search{
-    padding: 25px;
+/* Search Section */
+.search {
     text-align: center;
-
+    padding: 30px;
 }
 
+input {
+    width: 60%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid gray;
+}
+
+/* Image Gallery */
 .image {
-    margin: 100px 0 0 200px;
-    width: 70%;
-    height: 450px;
+    width: 80%;
+    margin: 40px auto;
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
 .image img {
-    width: 10%;
-    height: 200%;
+    width: 120px;
+    height: 300px;
     object-fit: cover;
     border-radius: 10px;
-    transition: all ease-in-out 0.5s;
     cursor: pointer;
+    transition: all 0.5s ease;
 }
-
 
 .image img:hover {
-    width: 60%;
-    height: 200%;
+    width: 300px;
 }
 
-.footer{
+.about{
+    margin: 20px;
+}
+/* Footer */
+.footer {
     background-color: black;
     color: white;
-    padding: 25px;
-    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto ; /* Pushes footer to the bottom */
 }
