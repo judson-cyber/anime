@@ -3,50 +3,390 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime Gallery</title>
+
+    <meta name="description" content="Explore your favorite anime characters in our Anime Gallery.">
+    <meta name="theme-color" content="#0f0f1a">
+
+    <title>AnimeVerse | Anime Gallery</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <nav>
-            <h1>Anime Gallery</h1>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
 
-            <ul>
-                <li><a href="#">Home</a></li>
+            <a href="#" class="logo">
+                <span>✦</span> AnimeVerse
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#about">About</a></li>
             </ul>
+
+            <button class="menu-btn" aria-label="Open menu">
+                ☰
+            </button>
+
         </nav>
     </header>
 
-    <section class="search">
-        <input type="text" placeholder="Search your favorite anime...">
-    </section>
 
-    <section class="image" id="gallery">
-        <img src="images/luffy.jpg" alt="Monkey D. Luffy">
-        <img src="images/naruto.jpg" alt="Naruto Uzumaki">
-        <img src="images/hinata.jpg" alt="Hinata Shoyo">
-        <img src="images/light.jpg" alt="Light Yagami">
-        <img src="images/eren.jpg" alt="Eren Yeager">
-    </section>
+    <!-- Hero Section -->
+    <main>
 
-    <section class="about" id="about">
-        <h2>About Anime</h2>
+        <section class="hero">
 
-        <p>
-            Anime is a style of animation that originated in Japan and has become
-            popular around the world. It features unique storytelling, memorable
-            characters, and stunning artwork. From action and adventure to romance,
-            comedy, fantasy, and science fiction, anime offers something for every
-            viewer and continues to inspire millions of fans worldwide.
-        </p>
-    </section>
+            <div class="hero-content">
 
-    <footer>
-        <p>&copy; 2026 Anime Gallery. All Rights Reserved.</p>
+                <span class="badge">✦ WELCOME TO ANIMEVERSE</span>
+
+                <h1>
+                    Discover Your
+                    <span>Favorite Anime</span>
+                </h1>
+
+                <p>
+                    Explore legendary characters, unforgettable stories,
+                    and the amazing worlds of anime.
+                </p>
+
+                <a href="#gallery" class="hero-btn">
+                    Explore Gallery →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Search -->
+        <section class="search-section">
+
+            <div class="search-box">
+
+                <span class="search-icon">⌕</span>
+
+                <input
+                    type="search"
+                    id="animeSearch"
+                    placeholder="Search your favorite anime..."
+                    aria-label="Search anime"
+                >
+
+                <button type="button" id="clearSearch">
+                    Clear
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Gallery -->
+        <section class="gallery-section" id="gallery">
+
+            <div class="section-heading">
+                <span>✦ CHARACTERS</span>
+
+                <h2>Anime Gallery</h2>
+
+                <p>
+                    A collection of some of the most iconic anime characters.
+                </p>
+            </div>
+
+
+            <div class="gallery-grid">
+
+                <!-- Luffy -->
+                <article class="anime-card" data-name="luffy one piece monkey d luffy">
+
+                    <div class="image-wrapper">
+                        <img
+                            src="images/luffy.jpg"
+                            alt="Monkey D. Luffy from One Piece"
+                            loading="lazy"
+                        >
+
+                        <span class="anime-tag">One Piece</span>
+                    </div>
+
+                    <div class="card-content">
+                        <h3>Monkey D. Luffy</h3>
+
+                        <p>
+                            The adventurous captain of the Straw Hat Pirates.
+                        </p>
+
+                        <a href="#" class="card-link">
+                            View Character →
+                        </a>
+                    </div>
+
+                </article>
+
+
+                <!-- Naruto -->
+                <article class="anime-card" data-name="naruto naruto uzumaki">
+
+                    <div class="image-wrapper">
+                        <img
+                            src="images/naruto.jpg"
+                            alt="Naruto Uzumaki from Naruto"
+                            loading="lazy"
+                        >
+
+                        <span class="anime-tag">Naruto</span>
+                    </div>
+
+                    <div class="card-content">
+                        <h3>Naruto Uzumaki</h3>
+
+                        <p>
+                            A determined ninja who dreams of becoming Hokage.
+                        </p>
+
+                        <a href="#" class="card-link">
+                            View Character →
+                        </a>
+                    </div>
+
+                </article>
+
+
+                <!-- Hinata -->
+                <article class="anime-card" data-name="hinata hinata shoyo haikyuu">
+
+                    <div class="image-wrapper">
+                        <img
+                            src="images/hinata.jpg"
+                            alt="Shoyo Hinata from Haikyuu"
+                            loading="lazy"
+                        >
+
+                        <span class="anime-tag">Haikyuu!!</span>
+                    </div>
+
+                    <div class="card-content">
+                        <h3>Shoyo Hinata</h3>
+
+                        <p>
+                            A passionate volleyball player with incredible energy.
+                        </p>
+
+                        <a href="#" class="card-link">
+                            View Character →
+                        </a>
+                    </div>
+
+                </article>
+
+
+                <!-- Light -->
+                <article class="anime-card" data-name="light light yagami death note">
+
+                    <div class="image-wrapper">
+                        <img
+                            src="images/light.jpg"
+                            alt="Light Yagami from Death Note"
+                            loading="lazy"
+                        >
+
+                        <span class="anime-tag">Death Note</span>
+                    </div>
+
+                    <div class="card-content">
+                        <h3>Light Yagami</h3>
+
+                        <p>
+                            A brilliant student who discovers the mysterious Death Note.
+                        </p>
+
+                        <a href="#" class="card-link">
+                            View Character →
+                        </a>
+                    </div>
+
+                </article>
+
+
+                <!-- Eren -->
+                <article class="anime-card" data-name="eren eren yeager attack on titan">
+
+                    <div class="image-wrapper">
+                        <img
+                            src="images/eren.jpg"
+                            alt="Eren Yeager from Attack on Titan"
+                            loading="lazy"
+                        >
+
+                        <span class="anime-tag">Attack on Titan</span>
+                    </div>
+
+                    <div class="card-content">
+                        <h3>Eren Yeager</h3>
+
+                        <p>
+                            A determined soldier fighting for freedom beyond the walls.
+                        </p>
+
+                        <a href="#" class="card-link">
+                            View Character →
+                        </a>
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- No Results -->
+            <div class="no-results" id="noResults">
+                <div>🔍</div>
+                <h3>No anime found</h3>
+                <p>Try searching for another character.</p>
+            </div>
+
+        </section>
+
+
+        <!-- About -->
+        <section class="about-section" id="about">
+
+            <div class="about-content">
+
+                <span class="section-label">✦ ABOUT US</span>
+
+                <h2>
+                    The World of
+                    <span>Anime</span>
+                </h2>
+
+                <p>
+                    Anime is a unique form of animation that originated in Japan
+                    and has captured the hearts of audiences around the world.
+                    With incredible storytelling, unforgettable characters,
+                    beautiful artwork, and diverse genres, anime offers something
+                    for everyone.
+                </p>
+
+                <p>
+                    From action and adventure to romance, comedy, fantasy,
+                    horror, and science fiction, every anime has a story waiting
+                    to be discovered.
+                </p>
+
+                <div class="stats">
+
+                    <div class="stat">
+                        <strong>∞</strong>
+                        <span>Stories</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>1000+</strong>
+                        <span>Characters</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>❤️</strong>
+                        <span>Fans</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <a href="#" class="logo">
+                <span>✦</span> AnimeVerse
+            </a>
+
+            <p>
+                Discover. Explore. Enjoy Anime.
+            </p>
+
+            <div class="social-links">
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
+                <a href="#" aria-label="YouTube">YouTube</a>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>
+                © 2026 AnimeVerse. All Rights Reserved.
+            </p>
+        </div>
+
     </footer>
+
+
+    <!-- JavaScript -->
+    <script>
+
+        const searchInput = document.getElementById("animeSearch");
+        const clearButton = document.getElementById("clearSearch");
+        const cards = document.querySelectorAll(".anime-card");
+        const noResults = document.getElementById("noResults");
+
+        searchInput.addEventListener("input", () => {
+
+            const searchValue = searchInput.value
+                .toLowerCase()
+                .trim();
+
+            let visibleCards = 0;
+
+            cards.forEach(card => {
+
+                const animeName = card.dataset.name;
+
+                if (animeName.includes(searchValue)) {
+                    card.style.display = "";
+                    visibleCards++;
+                } else {
+                    card.style.display = "none";
+                }
+
+            });
+
+            noResults.style.display =
+                visibleCards === 0 ? "block" : "none";
+
+        });
+
+
+        clearButton.addEventListener("click", () => {
+
+            searchInput.value = "";
+
+            cards.forEach(card => {
+                card.style.display = "";
+            });
+
+            noResults.style.display = "none";
+
+            searchInput.focus();
+
+        });
+
+    </script>
 
 </body>
 </html>
